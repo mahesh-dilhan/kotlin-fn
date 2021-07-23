@@ -17,3 +17,5 @@ fun bookPrice(book: Book) = book.price.value
 
 val bookWeightFun = fun(book: Book) = book.weight
 val bookPriceFun = fun(book: Book) = book.price.value
+
+typealias BookMapper<T> = (Book) -> T
