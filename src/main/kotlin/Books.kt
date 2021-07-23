@@ -10,15 +10,7 @@ data class Book(
     val year: Int,
     val author: String
 )
-fun main() {
-    // 1
-    var bookFun = bookWeightFun
-    println("Book weight: ${bookFun(books[0])} Kg")
 
-    // 2
-    bookFun = bookPriceFun
-    println("Book price: ${bookFun(books[0])} £")
-}
 fun bookWeight(book: Book) = book.weight
 
 fun bookPrice(book: Book) = book.price.value
